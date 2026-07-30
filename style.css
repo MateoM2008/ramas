@@ -1,3 +1,86 @@
-body { font-family: sans-serif; background-color: #f4f4f4; color: #333; padding: 20px; }
-.comando { background: white; padding: 15px; margin-bottom: 10px; border-left: 5px solid #2ecc71; border-radius: 4px; }
-h1 { color: #2c3e50; }
+/* Fondo general */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #020617, #0f172a, #111827);
+    color: #e2e8f0;
+    padding: 30px;
+    margin: 0;
+}
+
+/* Encabezado */
+header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+h1 {
+    color: #00e5ff;
+    font-size: 2.6rem;
+    text-shadow:
+        0 0 8px #00e5ff,
+        0 0 20px #00e5ff,
+        0 0 40px #00e5ff;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #8be9fd;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+/* Contenedor */
+#contenedor {
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Tarjetas */
+.comando {
+    background: rgba(15, 23, 42, 0.9);
+    border-left: 6px solid #00e5ff;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow:
+        0 0 12px rgba(0,229,255,.4),
+        0 0 25px rgba(0,229,255,.2);
+    transition: .35s;
+}
+
+/* Efecto al pasar el mouse */
+.comando:hover {
+    transform: translateY(-5px) scale(1.02);
+    border-left-color: #39ff14;
+    box-shadow:
+        0 0 18px #39ff14,
+        0 0 35px #00e5ff;
+}
+
+/* Títulos */
+.comando h2 {
+    color: #39ff14;
+    margin-top: 0;
+    text-shadow: 0 0 10px #39ff14;
+}
+
+/* Texto */
+.comando p {
+    color: #d1d5db;
+    line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .comando {
+        padding: 15px;
+    }
+}
